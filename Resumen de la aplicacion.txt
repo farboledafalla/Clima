@@ -1,0 +1,18 @@
+Resumen
+-------
+
+1. Directiva: no implementada
+2. Pipe: no implementado
+3. Pruebas unitarias: no implementadas
+4. Pruebas de integración: no implementadas
+5. Buenas practicas: Solo implemente en Lazyload
+
+
+Nota: El enlace "Por Nombre de ciudad" permite ver datos del clima de una ciudad en particular, se debe ingresar el nombre de la ciudad y el código del país, eje. (Lima, pe)
+
+Nota: El enlace "Por coordenadas de la ciudad" permite ver datos de la contaminación del aire, se debe ingresar la Latitud y Longitud de la ciudad, eje. (-75.6811, 4.5339)
+
+Nota: El enlace "Temperaturas" permte ver historico de temperaturas.
+
+
+PDT: INGENIERO DISCULPE POR NO PODER REALIZAR LA PRUEBA A CABALIDAD, ME COSTÓ BASTANTE PODER DEDICAR EL TIEMPO NECESARIO.

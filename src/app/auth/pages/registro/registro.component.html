@@ -1,0 +1,18 @@
+<div id="registro">
+    <h2>Crear Usuario</h2>
+    <form (submit)="registro(user, password)">
+        <div>
+            <input type="text" name="user" placeholder="Usuario" #user>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Password" #password>
+        </div>
+        <div>
+            <button>Registrar</button>
+        </div>
+    </form>
+</div>
+
+<p id="atras">
+    <a routerLink="/auth/login">Atras</a>
+</p>

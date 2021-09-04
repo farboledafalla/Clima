@@ -1,0 +1,37 @@
+#registro {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px #ccc;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    margin-top: 180px;
+    text-align: center;
+    width: 40%;
+}
+
+h2 {
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+button {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 100px;
+}
+
+#atras {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#atras a {
+    color: #3b99f3;
+    text-decoration: none;
+}

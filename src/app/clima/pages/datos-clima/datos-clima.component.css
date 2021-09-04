@@ -1,0 +1,44 @@
+h3 {
+    background-color: #333;
+    color: #eee;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+p {
+    margin-left: 15px;
+}
+
+span {
+    color: #b0b0b0;
+    font-size: 13px;
+}
+
+#datos-clima {
+    border: 1px solid #ccc;
+}
+
+#img-clima {
+    text-align: center;
+}
+
+#clima-item,
+#clima-valor {
+    float: left;
+}
+
+#clima-item ul,
+#clima-valor ul {
+    list-style: none;
+}
+
+#clima-item ul li,
+#clima-valor ul li {
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}

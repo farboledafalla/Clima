@@ -1,0 +1,36 @@
+h3 {
+    background-color: #333;
+    color: #eee;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+p {
+    margin-left: 15px;
+}
+
+#ubicacion {
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+#ubicacion-item,
+#ubicacion-valor {
+    float: left;
+}
+
+#ubicacion-item ul,
+#ubicacion-valor ul {
+    list-style: none;
+}
+
+#ubicacion-item ul li,
+#ubicacion-valor ul li {
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}

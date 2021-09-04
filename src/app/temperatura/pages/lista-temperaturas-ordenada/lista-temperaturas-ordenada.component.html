@@ -1,0 +1,9 @@
+<h3 appDirectiveColor>Listado ordenado por Pipe</h3>
+
+<ul>
+    <li directiveColor *ngFor="let lista of listTempSort | sort">
+        Temperatura: {{lista}}
+    </li>
+</ul>
+
+<span>Creditos: https://api.openweathermap.org//data/2.5/find?lat=55.5&lon=37.5&cnt=5&appid=2f80ffd6bb02e9d8abfc2f88d059e299</span>

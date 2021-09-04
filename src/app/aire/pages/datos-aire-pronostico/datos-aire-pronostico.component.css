@@ -1,0 +1,31 @@
+span {
+    color: #b0b0b0;
+    font-size: 13px;
+    text-align: right;
+}
+
+h3 {
+    background-color: #333;
+    color: #eee;
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+table {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+tr {
+    border: 1px solid #ccc;
+}
+
+#forecast {
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,28 @@
+<div id="datos-clima">
+    <h3>Datos climaticos</h3>
+
+    <p id="img-clima" *ngIf="logoClima">
+        <img src="https://openweathermap.org/img/wn/{{logoClima}}@2x.png" alt="Clima">
+    </p>
+
+    <div id="clima-item">
+        <ul>
+            <li>Descripción:</li>
+            <li>Temp. Mínima:</li>
+            <li>Temperatura:</li>
+            <li>Temp. Máxima:</li>
+            <li>Humedad:</li>
+            <li>Presión:</li>
+            <li>Velocidad viento:</li>
+        </ul>
+    </div>
+    <div id="clima-valor">
+        <ul *ngIf="weather">
+            <li *ngFor="let datosClima of weather">{{datosClima}}</li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <span>Creditos: https://api.openweathermap.org/</span>
+</div>

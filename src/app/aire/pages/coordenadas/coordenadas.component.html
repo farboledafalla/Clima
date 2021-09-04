@@ -1,0 +1,21 @@
+<!-- 48. Organizar la interfaz -->
+<div id="formulario">
+    <h2>Coordenadas</h2>
+    <div id="imagen">        
+        <img width="180" alt="Angular Logo" src="..//..//..//..//assets/img/aire.png"/>
+    </div>
+
+    <form (submit)="submitPollution(latitud, longitud)">
+        <input type="text" name="" placeholder="Latitud (Ej. -75.2322)" #latitud><br>
+        <input type="text" name="" placeholder="Longitud (Ej. 4.4389)" #longitud><br>
+        <div id="boton">
+            <button>Ver Contaminación</button>
+        </div>
+    </form>
+</div>
+
+<div id="resultado">
+    <div *ngIf="pollution">
+        <app-datos-aire [pollution]="pollutionArray" [valorLat]="valorLat" [valorLon]="valorLon"></app-datos-aire>
+    </div>
+</div>

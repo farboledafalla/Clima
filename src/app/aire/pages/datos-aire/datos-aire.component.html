@@ -1,0 +1,36 @@
+<div id="container">
+    <div id="pollution">
+        <h3>Datos contaminación aire</h3>
+    
+        <div id="contaminacion-item">
+            <ul *ngIf="pollution">
+                <li>Calidad del aire:</li>
+                <li>Monóxido de carbono:</li>
+                <li>Monóxido de nitrogeno:</li>
+                <li>Dióxido de nitrogeno:</li>
+                <li>Ozono:</li>
+                <li>Amoniaco:</li>
+                <li>Dióxido de azufre:</li>
+                <li>Materia de particulas:</li>
+                <li>Particulas gruesas:</li>
+            </ul>
+        </div>
+        <div id="contaminacion-valor">
+            <ul>
+                <li *ngFor="let datos of pollution">{{datos}}</li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        
+        <div id="boton">
+            <form (submit)="submitForecast(latitud, longitud)">
+                <input type="hidden" value="{{valorLat}}" #latitud><br>
+                <input type="hidden" value="{{valorLon}}" #longitud>
+                <button *ngIf="pollution">Ver pronostico</button>
+            </form>
+        </div>
+    </div>
+    <div *ngIf="pollutionForecast" id="pronostico">
+        <app-datos-aire-pronostico [pollutionForecast]="forecast"></app-datos-aire-pronostico>
+    </div>
+</div>

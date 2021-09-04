@@ -1,0 +1,13 @@
+.resultado {
+    border: 1px solid #ccc;
+    float: left;
+    min-height: 300px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-top: 40px;
+    width: 42%;
+}
+
+p {
+    margin-left: 15px;
+}

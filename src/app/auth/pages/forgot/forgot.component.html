@@ -1,0 +1,18 @@
+<div id="forgot">
+    <h2>Cambiar Contraseña</h2>
+    <form (submit)="cambiar(user, password)">
+        <div>
+            <input type="text" name="user" placeholder="Usuario" #user>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Password" #password>
+        </div>
+        <div>
+            <button>Cambiar</button>
+        </div>
+    </form>
+</div>
+
+<p id="atras">
+    <a routerLink="/auth/login">Atras</a>
+</p>

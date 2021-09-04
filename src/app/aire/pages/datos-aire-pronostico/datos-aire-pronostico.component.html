@@ -1,0 +1,27 @@
+<div id="forecast">
+    <h3>Pronostico de contaminación</h3>
+    
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>CO</th>
+            <th>NO</th>
+            <th>NO2</th>
+            <th>O3</th>
+            <th>NH3</th>
+            <th>SO2</th>
+            <th>PM25</th>
+            <th>PM10</th>
+        </tr>
+        <tr>
+            <td>17-Ago-2021</td>
+            <td>7:00pm</td>
+            <td *ngFor="let datos of pollutionForecast">
+                {{ datos }}
+            </td>
+        </tr>
+    </table>
+
+    <span>https://openweathermap.org/api/air-pollution</span>
+</div>

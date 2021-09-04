@@ -1,0 +1,18 @@
+<div id="ubicacion">
+    <h3>Ubicación</h3>
+
+    <div id="ubicacion-item">
+        <ul *ngIf="location">
+            <li>Id:</li>
+            <li>Latitud:</li>
+            <li>Longitud:</li>
+        </ul>
+    </div>
+    <div id="ubicacion-valor">
+        <ul>
+            <li *ngFor="let datos of location">{{datos}}</li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+
+</div>

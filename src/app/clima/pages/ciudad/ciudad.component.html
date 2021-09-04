@@ -1,0 +1,26 @@
+<!-- 48. Organizar la interfaz -->
+<div id="formulario">
+    <h2>Ciudad</h2>
+    <div id="imagen">
+        <img alt="Angular Logo" src="../../../../assets/img/clima.png" />
+    </div>
+    <form (submit)="submitLocation(cityName, countryCode)">
+        <input type="text" name="" placeholder="Ciudad (Ej. Ibague)" #cityName><br>
+        <input type="text" name="" placeholder="Código País (Ej. co)" #countryCode><br>
+        <div id="boton">
+            <button>Ver Clima</button>
+        </div>
+    </form>
+</div>
+<div id="resultado">
+    <div *ngIf="weather">
+        <app-ciudad-ubicacion [location]="datosUbicacion"></app-ciudad-ubicacion>
+        <app-datos-clima [weather]="datosClimaticos" [logoClima]="logoWeather"></app-datos-clima>
+    </div>
+</div>
+<div id="mapa">
+    <google-map *ngIf="viewMap" width="100%" height="400px" [center]="position">
+        <map-marker [position]="position" [label]="label" [title]="title">
+        </map-marker>
+    </google-map>
+</div>

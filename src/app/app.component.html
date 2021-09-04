@@ -1,0 +1,29 @@
+<h1>{{ title }}</h1>
+
+<div id="lateral">
+  <ul>
+    <h3>Datos Climaticos</h3>
+    <li><a routerLink="/clima/ciudad">Por Nombre de Ciudad</a></li>
+  </ul>
+
+  <ul>
+    <h3>Contaminación del Aire</h3>
+    <li><a routerLink="/aire/coordenadas">Por Coordenadas de Ciudad</a></li>
+  </ul>
+
+  <ul>
+    <h3>Datos historicos</h3>
+    <li><a routerLink="/temperatura/consulta-api">Temperaturas</a></li>
+  </ul>
+</div>
+
+<div id="contenido">
+  <!-- 47. Organizamos la interfaz -->
+  <div id="logout"  *ngIf="viewHiddenLogout">
+    <button (click)="exit()">Logout</button>
+  </div>
+  <!-- 24. Renderizar las rutas creadas y que especifico en 'app-routing.module.ts' usando 'router-outlet' -->
+  <!-- 25. Debo definir e importar desde 'app-routing.module' el modulo de rutas del módulo que acabo de crear 'clima.module.ts' -->
+  <router-outlet></router-outlet>
+
+</div>
